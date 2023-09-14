@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4e945195_002D4808_002D4056_002D83ca_002Dde8fe9900039/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;Math3D&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4750B6FE-4B5C-4082-93E3-3041B13AF6FC::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests04_ScalarMultiplication.TestNegativeMatrix&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4750B6FE-4B5C-4082-93E3-3041B13AF6FC::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests03_IdentityMatrices&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4750B6FE-4B5C-4082-93E3-3041B13AF6FC::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests02_CopyAndModifyMatrices&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4750B6FE-4B5C-4082-93E3-3041B13AF6FC::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests01_NewMatrices&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4750B6FE-4B5C-4082-93E3-3041B13AF6FC::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests05_MatricesAddAndSubtract&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4750B6FE-4B5C-4082-93E3-3041B13AF6FC::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests06_MatricesMultiplication&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4750B6FE-4B5C-4082-93E3-3041B13AF6FC::.NETFramework,Version=v4.8::Maths_Matrices.Tests.Tests07_TransposeMatrices&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
