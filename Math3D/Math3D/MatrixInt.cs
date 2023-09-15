@@ -23,6 +23,12 @@ namespace Math3D
             private set => nbColumns = value;
         }
 
+        public int[,] MatrixArray
+        {
+            get => matrixArray;
+            set => matrixArray = value;
+        }
+        
         //Indexer
         public int this[int i, int j]
         {
@@ -245,6 +251,50 @@ namespace Math3D
         public static MatrixInt Transpose(MatrixInt m)
         {
             return m.Transpose();
+        }
+
+        public static MatrixInt GenerateAugmentedMatrix(MatrixInt m1, MatrixInt m2)
+        {
+            MatrixInt augmentedMatrix = new MatrixInt(m1.nbLines, m1.NbColumns + m2.NbColumns);
+
+            for (int i = 0; i < augmentedMatrix.nbLines; i++)
+            {
+                for (int j = 0; j < augmentedMatrix.nbColumns; j++)
+                {
+                    if (j < m1.nbColumns)
+                        augmentedMatrix[i, j] = m1.matrixArray[i, j];
+                    else
+                        augmentedMatrix[i, j] = m2.matrixArray[i, j - m1.nbColumns];
+                }
+            }
+
+            return augmentedMatrix;
+        }
+
+        public (MatrixInt, MatrixInt) Split(int columnIndex)
+        {
+            MatrixInt m1 = new MatrixInt(nbLines, columnIndex + 1);
+            MatrixInt m2 = new MatrixInt(nbLines, nbColumns - m1.NbColumns);
+            
+            //fill m1
+            for (int i = 0; i < m1.nbLines; i++)
+            {
+                for (int j = 0; j < m1.nbColumns; j++)
+                {
+                    m1.matrixArray[i, j] = matrixArray[i, j];
+                }
+            }
+            
+            //fill m2
+            for (int i = 0; i < m2.nbLines; i++)
+            {
+                for (int j = 0; j < m2.nbColumns; j++)
+                {
+                    m2.matrixArray[i, j] = matrixArray[i, j + columnIndex + 1];
+                }
+            }
+
+            return (m1, m2);
         }
     }
     

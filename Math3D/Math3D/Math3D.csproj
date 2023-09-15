@@ -43,6 +43,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="MatrixElementaryOperations.cs" />
         <Compile Include="MatrixInt.cs" />
         <Compile Include="Tests.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +54,8 @@
         <Compile Include="Tests05_MatricesAddAndSubtract.cs" />
         <Compile Include="Tests06_MatricesMultiplication.cs" />
         <Compile Include="Tests07_TransposeMatrices.cs" />
+        <Compile Include="Tests08_ElementaryOperations.cs" />
+        <Compile Include="Tests09_AugmentedMatricesAndSplit.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
